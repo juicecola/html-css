@@ -1,12 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Search</title>
-    </head>
-    <body>
-        <form action="https://www.google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Google Search</title>
+</head>
+<body>
+    <div class="header">
+        <div class="upper-right-links">
+            <a href="google_image_search.html">Image Search</a>
+            <a href="google_advanced_search.html">Advanced Search</a>
+        </div>
+    </div>
+
+    <div class="search-container">
+        <form action="google_search_results.html" method="GET">
+            <input type="text" id="search-bar" name="q" placeholder="Search Google...">
+            <br>
+            <input type="submit" value="Google Search" id="search-button">
         </form>
-    </body>
+    </div>
+</body>
 </html>
+

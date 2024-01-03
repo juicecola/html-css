@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Google Advanced Search</title>
+</head>
+<body>
+    <header>
+        <!-- Google Logo and Search Bar -->
+        <!-- Replace the action attribute with the actual Google Search URL -->
+        <form action="https://www.google.com/search" method="GET">
+            <img src="google_logo.png" alt="Google Logo">
+            <input type="text" name="q" placeholder="Search" required>
+            <button type="submit">Google Search</button>
+        </form>
+    </header>
+    <div class="form-container">
+        <!-- Advanced Search Options -->
+        <label>Find pages with all these words:</label>
+        <input type="text" name="all-words">
+        
+        <label>Find pages with this exact word or phrase:</label>
+        <input type="text" name="exact-phrase">
+        
+        <label>Find pages with any of these words:</label>
+        <input type="text" name="any-words">
+        
+        <label>Find pages with none of these words:</label>
+        <input type="text" name="none-words">
+        
+        <button type="submit" class="button">Advanced Search</button>
+    </div>
+    <footer>
+        <!-- Footer content -->
+    </footer>
+</body>
+</html>
+

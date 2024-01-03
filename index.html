@@ -11,11 +11,23 @@
             <a href="google_image_search.html">Image search</a>
             <a href="google_advanced_search.html">Advanced Search</a>
         </div>
-        <form action="https://www.google.com/search" method="GET">
+        <form id="searchForm" action="https://www.google.com/search" method="GET" onsubmit="updateI'mFeelingLuckyLink()">
             <input type="text" name="q" placeholder="Search Google...">
             <br>
             <input type="submit" value="Google Search" style="margin-top: 10px;">
+            <!-- Add I'm Feeling Lucky button -->
+            <a id="luckyLink" href="#" style="margin-top: 10px; text-decoration: none;">
+                <input type="button" value="I'm Feeling Lucky">
+            </a>
         </form>
+
+        <script>
+            function updateI'mFeelingLuckyLink() {
+                var query = document.getElementsByName('q')[0].value;
+                var luckyLink = document.getElementById('luckyLink');
+                luckyLink.href = "https://www.google.com/search?q=" + encodeURIComponent(query) + "&btnI=Im+Feeling+Lucky";
+            }
+        </script>
     </div>
 </body>
 </html>

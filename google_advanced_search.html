@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your stylesheet -->
     <title>Google Advanced Search</title>
 </head>
 <body>
@@ -12,23 +12,23 @@
         <!-- Replace the action attribute with the actual Google Search URL -->
         <form action="https://www.google.com/search" method="GET">
             <img src="google_logo.png" alt="Google Logo">
-            <input type="text" name="q" placeholder="Search" required>
+            <input type="text" name="q" id="search-bar" placeholder="Search" required>
             <button type="submit">Google Search</button>
         </form>
     </header>
     <div class="form-container">
         <!-- Advanced Search Options -->
-        <label>Find pages with… “all these words:”</label>
-        <input type="text" name="all-words">
+        <label for="all-words">Find pages with… “all these words:”</label>
+        <input type="text" name="all-words" id="all-words">
         
-        <label>Find pages with… “this exact word or phrase:”</label>
-        <input type="text" name="exact-phrase">
+        <label for="exact-phrase">Find pages with… “this exact word or phrase:”</label>
+        <input type="text" name="exact-phrase" id="exact-phrase">
         
-        <label>Find pages with… “any of these words:”</label>
-        <input type="text" name="any-words">
+        <label for="any-words">Find pages with… “any of these words:”</label>
+        <input type="text" name="any-words" id="any-words">
         
-        <label>Find pages with… “none of these words:”</label>
-        <input type="text" name="none-words">
+        <label for="none-words">Find pages with… “none of these words:”</label>
+        <input type="text" name="none-words" id="none-words">
         
         <button type="submit" class="button">Advanced Search</button>
     </div>
